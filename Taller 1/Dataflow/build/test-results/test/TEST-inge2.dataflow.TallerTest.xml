@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="inge2.dataflow.TallerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-08-29T18:15:38" hostname="HP-VIOLETA" time="2.411">
+  <properties/>
+  <testcase name="testTarget1()" classname="inge2.dataflow.TallerTest" time="1.12"/>
+  <testcase name="testTarget2()" classname="inge2.dataflow.TallerTest" time="0.254"/>
+  <testcase name="testTarget3()" classname="inge2.dataflow.TallerTest" time="0.208"/>
+  <testcase name="testTarget4()" classname="inge2.dataflow.TallerTest" time="0.253"/>
+  <testcase name="testTarget5()" classname="inge2.dataflow.TallerTest" time="0.202"/>
+  <testcase name="testTarget6()" classname="inge2.dataflow.TallerTest" time="0.213"/>
+  <testcase name="testTarget7()" classname="inge2.dataflow.TallerTest" time="0.153"/>
+  <system-out><![CDATA[Soot started on Thu Aug 29 15:15:38 ART 2024
+Soot finished on Thu Aug 29 15:15:39 ART 2024
+Soot has run for 0 min. 0 sec.
+Soot started on Thu Aug 29 15:15:39 ART 2024
+Soot finished on Thu Aug 29 15:15:39 ART 2024
+Soot has run for 0 min. 0 sec.
+Soot started on Thu Aug 29 15:15:39 ART 2024
+Soot finished on Thu Aug 29 15:15:40 ART 2024
+Soot has run for 0 min. 0 sec.
+Soot started on Thu Aug 29 15:15:40 ART 2024
+Soot finished on Thu Aug 29 15:15:40 ART 2024
+Soot has run for 0 min. 0 sec.
+Soot started on Thu Aug 29 15:15:40 ART 2024
+Soot finished on Thu Aug 29 15:15:40 ART 2024
+Soot has run for 0 min. 0 sec.
+Soot started on Thu Aug 29 15:15:40 ART 2024
+Soot finished on Thu Aug 29 15:15:40 ART 2024
+Soot has run for 0 min. 0 sec.
+Soot started on Thu Aug 29 15:15:40 ART 2024
+Soot finished on Thu Aug 29 15:15:40 ART 2024
+Soot has run for 0 min. 0 sec.
+]]></system-out>
+  <system-err><![CDATA[[Thread-6] ERROR inge2.dataflow.Launcher - Found a possible division by zero in line 7
+[Thread-10] ERROR inge2.dataflow.Launcher - Found a possible division by zero in line 7
+[Thread-14] ERROR inge2.dataflow.Launcher - Found a possible division by zero in line 6
+[Thread-18] ERROR inge2.dataflow.Launcher - Found a possible division by zero in line 11
+[Thread-30] ERROR inge2.dataflow.Launcher - Found a possible division by zero in line 7
+]]></system-err>
+</testsuite>
