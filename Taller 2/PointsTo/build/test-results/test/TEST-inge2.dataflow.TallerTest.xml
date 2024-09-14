@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="inge2.dataflow.TallerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-09-05T19:30:14" hostname="HP-VIOLETA" time="1.641">
+<testsuite name="inge2.dataflow.TallerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2024-09-07T14:47:43" hostname="HP-VIOLETA" time="2.703">
   <properties/>
-  <testcase name="testTarget1()" classname="inge2.dataflow.TallerTest" time="0.688"/>
-  <testcase name="testTarget2()" classname="inge2.dataflow.TallerTest" time="0.183"/>
-  <testcase name="testTarget3()" classname="inge2.dataflow.TallerTest" time="0.289"/>
-  <testcase name="testTarget4()" classname="inge2.dataflow.TallerTest" time="0.119"/>
-  <testcase name="testTarget5()" classname="inge2.dataflow.TallerTest" time="0.158"/>
-  <testcase name="testTarget6()" classname="inge2.dataflow.TallerTest" time="0.193"/>
-  <testcase name="testUnionPTG()" classname="inge2.dataflow.TallerTest" time="0.003"/>
-  <system-out><![CDATA[Soot started on Thu Sep 05 16:30:14 ART 2024
-Soot finished on Thu Sep 05 16:30:15 ART 2024
+  <testcase name="testTarget1()" classname="inge2.dataflow.TallerTest" time="1.153"/>
+  <testcase name="testTarget2()" classname="inge2.dataflow.TallerTest" time="0.399"/>
+  <testcase name="testTarget3()" classname="inge2.dataflow.TallerTest" time="0.313"/>
+  <testcase name="testTarget4()" classname="inge2.dataflow.TallerTest" time="0.337"/>
+  <testcase name="testTarget5()" classname="inge2.dataflow.TallerTest" time="0.251"/>
+  <testcase name="testTarget6()" classname="inge2.dataflow.TallerTest" time="0.237"/>
+  <testcase name="testUnionPTG()" classname="inge2.dataflow.TallerTest" time="0.005"/>
+  <system-out><![CDATA[Soot started on Sat Sep 07 11:47:43 ART 2024
+Soot finished on Sat Sep 07 11:47:44 ART 2024
 Soot has run for 0 min. 0 sec.
-Soot started on Thu Sep 05 16:30:15 ART 2024
-Soot finished on Thu Sep 05 16:30:15 ART 2024
+Soot started on Sat Sep 07 11:47:44 ART 2024
+Soot finished on Sat Sep 07 11:47:45 ART 2024
 Soot has run for 0 min. 0 sec.
-Soot started on Thu Sep 05 16:30:15 ART 2024
-Soot finished on Thu Sep 05 16:30:15 ART 2024
+Soot started on Sat Sep 07 11:47:45 ART 2024
+Soot finished on Sat Sep 07 11:47:45 ART 2024
 Soot has run for 0 min. 0 sec.
-Soot started on Thu Sep 05 16:30:15 ART 2024
-Soot finished on Thu Sep 05 16:30:16 ART 2024
+Soot started on Sat Sep 07 11:47:45 ART 2024
+Soot finished on Sat Sep 07 11:47:45 ART 2024
 Soot has run for 0 min. 0 sec.
-Soot started on Thu Sep 05 16:30:16 ART 2024
-Soot finished on Thu Sep 05 16:30:16 ART 2024
+Soot started on Sat Sep 07 11:47:45 ART 2024
+Soot finished on Sat Sep 07 11:47:46 ART 2024
 Soot has run for 0 min. 0 sec.
-Soot started on Thu Sep 05 16:30:16 ART 2024
-Soot finished on Thu Sep 05 16:30:16 ART 2024
+Soot started on Sat Sep 07 11:47:46 ART 2024
+Soot finished on Sat Sep 07 11:47:46 ART 2024
 Soot has run for 0 min. 0 sec.
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
