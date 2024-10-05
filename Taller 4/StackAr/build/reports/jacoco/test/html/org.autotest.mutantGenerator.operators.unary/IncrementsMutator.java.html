@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>IncrementsMutator.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">StackAr</a> &gt; <a href="index.source.html" class="el_package">org.autotest.mutantGenerator.operators.unary</a> &gt; <span class="el_source">IncrementsMutator.java</span></div><h1>IncrementsMutator.java</h1><pre class="source lang-java linenums">package org.autotest.mutantGenerator.operators.unary;
+
+import org.autotest.helpers.UnaryOperatorKindToString;
+import org.autotest.mutantGenerator.operators.MutationOperator;
+import spoon.reflect.code.BinaryOperatorKind;
+import spoon.reflect.code.CtBinaryOperator;
+import spoon.reflect.code.CtUnaryOperator;
+import spoon.reflect.code.UnaryOperatorKind;
+import spoon.reflect.declaration.CtElement;
+
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * Operador de mutación basado en https://pitest.org/quickstart/mutators/#INCREMENTS
+ *
+ * Este operador de mutación reemplaza los operadores de incremento y decremento de variables locales (variables de pila).
+ */
+<span class="nc" id="L19">public class IncrementsMutator extends MutationOperator {</span>
+    @Override
+    public boolean isToBeProcessed(CtElement candidate) {
+        // call super method to check if the candidate is not part of randoop.CheckRep: repOK method
+<span class="nc bnc" id="L23" title="All 2 branches missed.">        if (!super.isToBeProcessed(candidate)) {</span>
+<span class="nc" id="L24">            return false;</span>
+        }
+
+<span class="nc bnc" id="L27" title="All 2 branches missed.">        if (!(candidate instanceof CtUnaryOperator)) {</span>
+<span class="nc" id="L28">            return false;</span>
+        }
+        // COMPLETAR
+<span class="nc" id="L31">        List&lt;UnaryOperatorKind&gt; targetOperations = Arrays.asList(</span>
+                UnaryOperatorKind.PREINC, // ++a
+                UnaryOperatorKind.PREDEC, // --a
+                UnaryOperatorKind.POSTINC, // a++
+                UnaryOperatorKind.POSTDEC // a--
+        );
+<span class="nc" id="L37">        return false;</span>
+    }
+
+    @Override
+    public void process(CtElement candidate) {
+        // COMPLETAR
+<span class="nc" id="L43">        CtUnaryOperator op = (CtUnaryOperator) candidate;</span>
+<span class="nc" id="L44">        op.setKind(getReplacement(op.getKind()));</span>
+<span class="nc" id="L45">    }</span>
+
+    public UnaryOperatorKind getReplacement(UnaryOperatorKind kind) {
+        // COMPLETAR
+<span class="nc bnc" id="L49" title="All 5 branches missed.">        switch (kind) {</span>
+            case PREINC:
+<span class="nc" id="L51">                return UnaryOperatorKind.PREDEC;</span>
+            case PREDEC:
+<span class="nc" id="L53">                return UnaryOperatorKind.PREINC;</span>
+            case POSTDEC:
+<span class="nc" id="L55">                return UnaryOperatorKind.POSTINC;</span>
+            case POSTINC:
+<span class="nc" id="L57">                return UnaryOperatorKind.POSTDEC;</span>
+        }
+<span class="nc" id="L59">        return null;</span>
+    }
+
+    @Override
+    public String describeMutation(CtElement candidate) {
+<span class="nc" id="L64">        CtUnaryOperator op = (CtUnaryOperator)candidate;</span>
+<span class="nc" id="L65">        return this.getClass().getSimpleName() + &quot;: Se reemplazó &quot; +</span>
+<span class="nc" id="L66">                UnaryOperatorKindToString.get(op.getKind()) + &quot; por &quot; + UnaryOperatorKindToString.get(getReplacement(op.getKind())) +</span>
+<span class="nc" id="L67">                &quot; en la línea &quot; + op.getPosition().getLine() + &quot;.&quot;;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
