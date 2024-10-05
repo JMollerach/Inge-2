@@ -27,11 +27,11 @@ En StackTests1 el mutation score es de 25%. En StackTests2 y StackTests3 el muta
 1.  ¿Cuál es el mutation score logrado para los tests del 
 StackTests2 mejorado (i.e. StackTests3)?
 
-El mutation score logrado fue del 81%.
+El mutation score logrado fue del 84%.
 
 2. ¿Cuántos mutantes vivos y muertos encontraron?
 
-Encontramos 13 mutantes vivos y 59 muertos.
+Encontramos 11 mutantes vivos y 61 muertos.
 
 3. Comente cuáles son todos los mutantes vivos que quedaron y 
 justifique por qué son mutantes equivalentes al programa original.
@@ -55,7 +55,7 @@ afectan la función de hash.
 
 4. ¿Cuál es el instruction coverage promedio que lograron para las clases mutadas? 
 
-El instruction coverage promedio fue de 53%
+El instruction coverage promedio fue de 58%
 
 5. ¿Cuál es el peor instruction coverage que lograron para una clase 
 mutada? ¿Por qué creen que sucede esto?
