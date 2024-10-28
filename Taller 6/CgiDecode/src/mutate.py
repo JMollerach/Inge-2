@@ -55,7 +55,9 @@ def modify_test_case(individual: List[str]) -> List[str]:
 
 
 def mutate(individual: List[str]) -> List[str]:
+    #Hacemos una copia, quizás no es necesario
     individual = individual[:]
+    #Si la mutacion no es viable, volvemos a intentar hasta lograr mutar
     se_muto = False
 
     while not se_muto:

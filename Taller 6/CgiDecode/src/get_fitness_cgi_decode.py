@@ -28,7 +28,7 @@ def get_fitness_cgi_decode(test_suite: List[str]) -> float:
         # obj c1 false
     elif distances_false[1]==0:
         fitness += norm(distances_true[1])
-
+    #c1 siempre se alcanza
 
     if 2 in distances_false:
         # obj c2 true

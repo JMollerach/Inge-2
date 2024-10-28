@@ -83,9 +83,8 @@ class GeneticAlgorithm():
 
             # Evaluar la nueva poblacion e imprimir el mejor valor de fitness
             index_best_individual = min(fitness_by_individual, key=fitness_by_individual.get)
-            if fitness_by_individual[index_best_individual] < self.fitness_best_individual:
-                self.best_individual = population[index_best_individual]
-                self.fitness_best_individual = fitness_by_individual[index_best_individual]
+            self.best_individual = population[index_best_individual]
+            self.fitness_best_individual = fitness_by_individual[index_best_individual]
 
         # retornar el mejor individuo de la ultima generacion
         return self.best_individual
