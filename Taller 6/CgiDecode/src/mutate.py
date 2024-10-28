@@ -20,7 +20,8 @@ def modify_character(test_case: str) -> str:
 
 
 def add_test_case(individual: List[str]) -> List[str]:
-    individual.append(create_test_case())
+    test_case = create_test_case()
+    individual.append(test_case)
     return individual
 
 
@@ -38,15 +39,15 @@ def modify_test_case(individual: List[str]) -> List[str]:
         modificacion = choice([1, 2, 3])
 
         if modificacion == 1 and len(test_case) < 10:
-            add_character(test_case)
+            test_case = add_character(test_case)
             se_muto = True
 
         elif modificacion == 2 and len(test_case) > 1:
-            remove_character(test_case)
+            test_case = remove_character(test_case)
             se_muto = True
 
         elif modificacion == 3 and len(test_case) > 1:
-            modify_character(test_case)
+            test_case = modify_character(test_case)
             se_muto = True
 
     individual[index_case] = test_case
@@ -54,22 +55,22 @@ def modify_test_case(individual: List[str]) -> List[str]:
 
 
 def mutate(individual: List[str]) -> List[str]:
-
+    individual = individual[:]
     se_muto = False
 
     while not se_muto:
         mutacion = choice([1, 2, 3])
 
         if mutacion == 1 and len(individual) < 15:
-            add_test_case(individual)
+            individual = add_test_case(individual)
             se_muto = True
 
         elif mutacion == 2 and len(individual) > 1:
-            remove_test_case(individual)
+            individual = remove_test_case(individual)
             se_muto = True
 
         elif mutacion == 3 and len(individual) > 1:
-            modify_test_case(individual)
+            individual = modify_test_case(individual)
             se_muto = True
 
     return individual

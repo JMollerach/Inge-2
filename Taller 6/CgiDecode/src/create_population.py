@@ -4,13 +4,15 @@ from typing import List
 
 
 def get_random_character():
-    return choice(printable)
+    char=choice(printable)
+    return char
 
 
 def create_test_case() -> str:
     test = ''
     for _ in range(randint(0,10)):
-        test + get_random_character()
+        char = get_random_character()
+        test+= char
     return test
 
 
