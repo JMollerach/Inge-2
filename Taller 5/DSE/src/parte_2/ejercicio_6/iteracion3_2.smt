@@ -7,9 +7,7 @@
 (assert (and (< 1 3) (>= 1 0)))
 ;c2_1
 (assert (=(+ k 1.0) 0))
-;c1_2
-(assert (and (< 2 3) (>= 2 0)))
-;c2_2
-(assert (=(+ k 3.0) 0))
+;not c1_2
+(assert (not(and (< 2 3) (>= 2 0))))
 (check-sat)
 (get-model)
